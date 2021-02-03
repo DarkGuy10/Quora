@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Chatbox",
+  "version": "0.0",
+
+  "description": "Chatbox",
+
+  "icons": {
+    "48": "icons/logo-icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.quora.com/*"], 
+      "js": ["Imagify.js", "Groupify.js"],
+      "css": ["Extras.css"]
+    }
+  ]
+
+}
