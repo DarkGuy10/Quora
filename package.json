@@ -1,9 +1,9 @@
 {
-  "name": "quora",
-  "productName": "quora",
+  "name": "Quora",
+  "productName": "Quora",
   "version": "1.0.0",
-  "description": "My Electron application description",
-  "main": "src/index.js",
+  "description": "An electron-based desktop app for Quora",
+  "main": "src/Quora.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
