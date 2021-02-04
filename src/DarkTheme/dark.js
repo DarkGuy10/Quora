@@ -7,7 +7,7 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) document.body.sty
 // Even listener for changes in system preference
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', detect => {
     if (window.matchMedia('prefers-color-scheme: dark').matches) {
-        document.body.style = originalCSS;
+        document.body.style = originCSS;
      } else {
         document.body.style.src = "DarkTheme.css";
 }
