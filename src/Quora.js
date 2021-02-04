@@ -15,10 +15,9 @@ const createWindow = () => {
     icon: __dirname + 'icons/logo.ico'
   });
 
-  // and load the index.html of the app.
   mainWindow.loadURL('http://quora.com')  
   mainWindow.maximize()
-  //mainWindow.setMenu(null)
+  mainWindow.setMenu(null)
   mainWindow.webContents.on('new-window', (event, url) => {
     event.preventDefault()
     mainWindow.loadURL(url)
