@@ -15,7 +15,7 @@ const createWindow = () => {
     	icon: __dirname + 'icons/logo.ico'
 	});
 
-  	mainWindow.loadURL('http://quora.com')  
+  	mainWindow.loadURL('http://quora.com', {userAgent: 'Chrome'})  
   	mainWindow.maximize()
   	mainWindow.setMenu(null)
   	mainWindow.webContents.on('new-window', (event, url) => {
