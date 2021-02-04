@@ -27,7 +27,7 @@ const createWindow = () => {
 // Some APIs can only be used after this event occurs.
 app.on('ready', createWindow);
 app.on('ready', async () => {
-  // await session.defaultSession.loadExtension(path.join(__dirname, 'DarkTheme'))
+    await session.defaultSession.loadExtension(path.join(__dirname, 'DarkTheme'))
   //await session.defaultSession.loadExtension(path.join(__dirname, 'DarkTheme'))
 })
 
