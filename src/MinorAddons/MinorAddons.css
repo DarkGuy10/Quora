@@ -1,0 +1,26 @@
+.addedNavBar
+{
+  height: auto;
+  width: auto;
+  display: block;
+  z-index: 1000000;
+  position: fixed;
+  top: 0px; left: 0px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+.addedNavBtn
+{
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  float: left;
+  border: transparent;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+}

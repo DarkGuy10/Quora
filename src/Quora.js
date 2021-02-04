@@ -26,7 +26,7 @@ const createWindow = () => {
 
 app.on('ready', createWindow);
 app.on('ready', async () => { // Loading extensions
-//	await session.defaultSession.loadExtension(path.join(__dirname, 'DarkTheme'))
+//	await session.defaultSession.loadExtension(path.join(__dirname, 'MinorAddons'))
 //	await session.defaultSession.loadExtension(path.join(__dirname, 'DarkTheme'))
 })
 
@@ -47,8 +47,9 @@ app.on('activate', () => {
   }
 });
 
-const contextMenu = require('electron-context-menu');
 
+// Adding the context menu
+const contextMenu = require('electron-context-menu');
 contextMenu({
 	append: (defaultActions, params, browserWindow) => [
 		{
