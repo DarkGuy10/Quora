@@ -6,6 +6,6 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', det
     if (window.matchMedia('prefers-color-scheme: dark').matches) {
         document.body.style = originalCSS;
      } else {
-        document.body.style.src = "DarkTheme.css"
+        document.body.style.src = "DarkTheme.css";
 }
 });
