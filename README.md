@@ -9,13 +9,13 @@ Bug fixes can be heavily delayed due to lack of contribtors
 
 ## Installation:
 
-###Linux:
+### Linux:
 Binaries not available
 
-###Windows:
+### Windows:
 Binaries not available
 
-###Mac:
+### Mac:
 Binaries not available
 
 ### Build From Source:
