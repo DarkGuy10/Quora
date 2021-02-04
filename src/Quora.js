@@ -1,4 +1,4 @@
-const { app, session, BrowserWindow } = require('electron');
+const { app, session, BrowserWindow, shell } = require('electron');
 const path = require('path');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -6,9 +6,10 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
   app.quit();
 }
 
+let mainWindow;
 const createWindow = () => {
   // Create the browser window.
-  const mainWindow = new BrowserWindow({
+  mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
     icon: __dirname + 'icons/logo.ico'
@@ -26,8 +27,8 @@ const createWindow = () => {
 
 app.on('ready', createWindow);
 app.on('ready', async () => { // Loading extensions
-  // await session.defaultSession.loadExtension(path.join(__dirname, 'DarkTheme'))
-  //await session.defaultSession.loadExtension(path.join(__dirname, 'DarkTheme'))
+//	await session.defaultSession.loadExtension(path.join(__dirname, 'DarkTheme'))
+//	await session.defaultSession.loadExtension(path.join(__dirname, 'DarkTheme'))
 })
 
 // Quit when all windows are closed, except on macOS. There, it's common
@@ -45,4 +46,52 @@ app.on('activate', () => {
   if (BrowserWindow.getAllWindows().length === 0) {
     createWindow();
   }
+});
+
+const contextMenu = require('electron-context-menu');
+
+contextMenu({
+	append: (defaultActions, params, browserWindow) => [
+		{
+			label: 'Reload Page',
+			click: () => {
+				mainWindow.webContents.reload();
+			}
+		},
+		{
+			label: 'Go back',
+			click: () => {
+				mainWindow.webContents.goBack();
+			}
+		},
+		{
+			label: 'Go forward',
+			click: () => {
+				mainWindow.webContents.goForward();
+			}
+		},
+		{
+			type: 'separator'
+		},
+		{
+			label: 'Quit',
+			click: () => {
+				app.quit();
+			}
+		},
+		{
+			type: 'separator',
+		},
+		{
+			label: 'Help',
+			click: () => {
+				shell.openExternal('https://darkguy10.github.io/Quora/');
+			}
+		}
+	],
+	showSaveImage: true,
+	showSaveImageAs: true,
+	showInspectElement: false,
+	showSearchWithGoogle: false,
+	showLookUpSelection: false
 });
