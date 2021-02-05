@@ -87,3 +87,6 @@ typings/
 
 # Electron-Forge
 out/
+
+#update script
+updater.py
