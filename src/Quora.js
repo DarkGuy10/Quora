@@ -27,7 +27,9 @@ const createWindow = () => {
 app.on('ready', createWindow);
 app.on('ready', async () => { // Loading extensions
 //	await session.defaultSession.loadExtension(path.join(__dirname, 'MinorAddons'))
-//	await session.defaultSession.loadExtension(path.join(__dirname, 'DarkTheme'))
+	if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+		await session.defaultSession.loadExtension(path.join(__dirname, 'DarkTheme'))
+	}
 })
 
 // Quit when all windows are closed, except on macOS. There, it's common
