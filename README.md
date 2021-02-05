@@ -13,7 +13,7 @@ Bug fixes can be heavily delayed due to lack of contribtors
 Binaries not available
 
 ### Windows:
-Binaries not available
+v0.0.1 (stable) - [Download zip](https://drive.google.com/file/d/1tvE1ObyqHTfCC4dJRaIpFbQ_-IoYaZwk/view?usp=sharing)
 
 ### Mac:
 Binaries not available
