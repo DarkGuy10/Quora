@@ -1,3 +1,15 @@
+*::-webkit-scrollbar {
+    width: 0.5em;
+}
+*::-webkit-scrollbar-track {
+    background-color: #181818; 
+  }
+*::-webkit-scrollbar-thumb {
+    width: 0.4em;
+    background-color: #4e4e4e;
+    border-radius: 0.8em;
+}
+
   * {
     text-shadow: none  !important;
     box-shadow: none  !important;
@@ -51,7 +63,7 @@
     background-color: /*[[base-color]]*/  !important;
   }
   [class*="ButtonPill___StyledButtonWrapper"] svg [stroke*="#666"] {
-    stroke: #eee  !important;
+    stroke: #eee;
   }
   [class="Box-s"] [color="red"] div[class="Box-s"] {
     background-color: #f00  !important;
@@ -212,14 +224,14 @@
   .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-stroke,
   .ui_icon_color--gray_dark .icon_svg-stroke,
   .icon_svg-stroke[stroke="#666"]:not([stroke-width="1.8"]) {
-    stroke: #eee  !important;
+    stroke: #eee;
   }
   .ui_button--FlatStyle--gray .ui_button_icon .icon_svg-stroke,
   .ui_button--StackedStyle--gray .ui_button_icon .icon_svg-stroke {
-    stroke: #aaa  !important;
+    stroke: #aaa;
   }
   .ui_button--PillStyle.pressed .ui_button_icon .icon_svg-stroke {
-    stroke: #ccc  !important;
+    stroke: #ccc;
   }
   .ui_button--PillStyle.pressed .ui_button_icon .icon_svg-fill_as_stroke,
   .ui_button--FlatStyle--blue.pressed .ui_button_icon .icon_svg-fill_as_stroke,
@@ -228,10 +240,10 @@
   .ui_button--FlatStyle--gray.pressed .ui_button_icon .icon_svg-fill,
   .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-fill,
   .icon_svg-fill_as_stroke {
-    fill: #ccc  !important;
+    fill: #ccc;
   }
   .icon_svg-fill_as_stroke {
-    fill: #ccc !important;
+    fill: #ccc;
   }
   .ui_icon_color--blue_dark .icon_svg-stroke,
   .ui_icon_color--blue .icon_svg-stroke,
@@ -246,12 +258,12 @@
     stroke: /*[[base-color]]*/ !important;
   }
   .icon_svg-fill {
-    fill: none !important;
+    fill: none;
   }
   .ui_button--FlatStyle--blue.pressed .ui_button_icon .icon_svg-fill,
   .ui_button--FlatStyle--gray.pressed .ui_button_icon .icon_svg-fill,
   .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-fill {
-    fill: /*[[base-color]]*/  !important;
+    fill: /*[[base-color]]*/ ;
   }
   .AddWorkCredentialListItem .list_item_icon,
   .AddSchoolCredentialListItem .list_item_icon,
@@ -687,18 +699,18 @@
     color: #949494  !important;
   }
   .graphs text {
-    fill: #eee  !important;
+    fill: #eee;
   }
   .ui_icon_color--gray .icon_svg-fill_as_stroke,
   .ui_button--FlatStyle--gray .ui_button_icon .icon_svg-fill_as_stroke,
   .ui_button--StackedStyle--gray .ui_button_icon .icon_svg-fill_as_stroke {
-    fill: #aaa  !important;
+    fill: #aaa;
   }
   .graphs rect:hover {
-    fill: #357  !important;
+    fill: #357;
   }
   .Placeholder.white_bg .svg_circular_hole .hole_path {
-    fill: #181818  !important;
+    fill: #181818;
   }
   /*** borders ***/
   .dialog .close_modal, .pagedlist_item.pagedlist_invisible,
@@ -841,7 +853,7 @@
     color: #2b6dad  !important;
   }
   .graphs rect {
-    fill: #246  !important;
+    fill: #246;
   }
   /*** Brown ***/
   .InteractionModeBanner>div, .ErrorBanner>div, .BrowserWarning>div,
@@ -988,4 +1000,26 @@
 .q-text.qu-color--gray_dark.qu-fontSize--regular.qu-py--small.qu-px--medium.qu-bg--white.qu-borderRadius--large.qu-ml--small.TextInputWrapper___StyledText-abzlxg-0,
 .q-text.qu-color--gray_dark.qu-fontSize--regular.qu-py--small.qu-px--medium.qu-bg--white.qu-borderRadius--large.TextInputWrapper___StyledText-abzlxg-0{
   background-color: #333 !important;
+}
+
+.qu-color--blue, .q-relative.qu-mr--n_small.qu-pr--small.qu-overflowY--hidden.qu-ml--tiny.qu-minHeight--24.qu-color--blue.qu-minWidth--24{
+  color: #2e69ff !important;
+}
+
+.q-click-wrapper.qu-active--textDecoration--none.qu-focus--textDecoration--none.base___StyledClickWrapper-lx6eke-1.qu-boxShadow--medium_25.qu-borderRadius--pill.qu-alignItems--center.qu-justifyContent--center.qu-whiteSpace--nowrap.qu-userSelect--none.qu-display--inline-flex.qu-bg--blue.qu-tapHighlight--white.qu-textAlign--center.qu-cursor--pointer.qu-hover--textDecoration--none{
+  background-color: #2e69ff !important;
+}
+
+.q-click-wrapper.qu-active--textDecoration--none.qu-focus--textDecoration--none.base___StyledClickWrapper-lx6eke-1.qu-boxShadow--medium_25.qu-borderRadius--pill.qu-alignItems--center.qu-justifyContent--center.qu-whiteSpace--nowrap.qu-userSelect--none.qu-display--inline-flex.qu-bg--blue.qu-tapHighlight--white.qu-textAlign--center.qu-cursor--pointer.qu-hover--textDecoration--none:hover{
+  background-color: #2e50ff !important;
+}
+
+.q-text.qu-fontSize--small.qu-truncateLines--2.qu-mr--large:hover {
+  color: #359dff !important;
+}
+
+.CssComponent-sc-1oskqb9-0.SiteNavItem___StyledCssComponent-sc-1hb734x-0 div div{
+  background-color: #3c3c3c !important;
+  color: #fff !important;
+  border: none;
 }
