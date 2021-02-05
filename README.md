@@ -1,7 +1,7 @@
 ![Quora Dark preview](src/icons/logo-large.png)
 
 ## Preview
-![Quora Dark preview](images/preview-light.png)
+![Quora Dark preview](images/preview-dark.png)
 
 ## Description:
 An **UNOFFICIAL** electron-based desktop app made for Quora.<br>
@@ -13,7 +13,7 @@ Bug fixes can be heavily delayed due to lack of contribtors
 Binaries not available
 
 ### Windows:
-v0.0.1 (stable) - [Download zip](https://drive.google.com/file/d/1tvE1ObyqHTfCC4dJRaIpFbQ_-IoYaZwk/view?usp=sharing)
+v1.0.0 (MAJOR RELEASE!) - [Download zip](https://drive.google.com/file/d/16GBpSnlJc6k1p9pnlB_XaHxRor3vW5Hk/view?usp=sharing)
 
 ### Mac:
 Binaries not available
