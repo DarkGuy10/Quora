@@ -1,4 +1,4 @@
-* {
+  * {
     text-shadow: none  !important;
     box-shadow: none  !important;
   }
@@ -7,7 +7,7 @@
     --bg-img: /*[[bg-choice]]*/ !important;
   }
   html, body:not(.logged_out_page_big_signup), .NuxModal.modal_overlay {
-    background-color: #282828  !important;
+    background-color: #181818  !important;
     background-image: var(--bg-img)  !important;
     background-clip: border-box  !important;
     background-origin: padding-box  !important;
@@ -16,7 +16,7 @@
   }
   /* the bg none is attached to the bg image above */
   .question_related.list, .question_main_col {
-    background-color: none !important;
+    background: none !important;
   }
   body {
     color: #eee  !important;
@@ -104,14 +104,14 @@
     color: #ddd  !important;
     background-color: #333  !important;
   }
-  div[style*="background-color: rgba(0, 0, 0, 0) linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%) repeat scroll 0% 0%"] {
-    background-color: linear-gradient(rgba(24, 24, 24, .3) 0%, rgba(24, 24, 24, .8) 100%) repeat scroll 0% 0%  !important;
+  div[style*="background: rgba(0, 0, 0, 0) linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%) repeat scroll 0% 0%"] {
+    background: linear-gradient(rgba(24, 24, 24, .3) 0%, rgba(24, 24, 24, .8) 100%) repeat scroll 0% 0%  !important;
   }
   .qu-bg--raised {
     background-color: transparent !important;
   }
   .qu-color--blue_dark.qu-bg--raised {
-    background-color: #282828 !important;
+    background-color: #181818 !important;
   }
   .qu-bg--blue_ultralight {
     background-color: #182030 !important;
@@ -130,18 +130,18 @@
   }
   .qu-bg--white, .qu-bg--white__ignore_dark_mode, .qu-bg--gray_ultralight,
   li.tribes_nav_menu div, .qu-bg--page--gray, .q-box.qu-bg--raised {
-    background-color: #282828 !important;
+    background-color: #181818 !important;
   }
   .q-platform--desktop .qu-bg--gray_ultralight:hover,
   .q-platform--desktop .qu-bg--gray_ultralight:focus,
   .q-platform--desktop .qu-bg--gray_ultralight:active,
   .q-platform--desktop .qu-hover--bg--gray_light:hover {
-    background-color: #333  !important;
+    background-color: #181818  !important;
   }
-  .q-platform--desktop .qu-hover--bg--blue_light:hover {
+  .q-box.qu-cursor--pointer.qu-p--medium.qu-borderBottom.qu-bg--blue_ultralight.qu-hover--bg--blue_light:hover{
     background-color: #246  !important;
   }
-  .q-platform--desktop .qu-hover--bg--gray_ultralight:hover {
+  .q-box.qu-cursor--pointer.qu-p--medium.qu-borderBottom.qu-bg--white.qu-hover--bg--gray_ultralight:hover {
     background-color: #333  !important;
   }
   li.tribes_nav_menu a:hover {
@@ -157,10 +157,10 @@
   /* exception color these bg gray on purpose */
   .web_page .ui_button--PillStyle--light_blue:focus,
   .web_page .ui_button--PillStyle--light_blue:hover, .u-bg--blue-light {
-    background-color: #444  !important;
+    background: #444  !important;
   }
   .ui_button--PillStyle--light_blue {
-    background-color: #333  !important;
+    background: #333  !important;
   }
   .distro_switcher, .AskQuestionStep .url_input,
   .TribeAddHyperLinkModal .url_input, .QuoraShareModal .url_input,
@@ -193,12 +193,11 @@
     border: 1px solid #ddd  !important;
   }
   .layout_3col_center .list_header, .qu-color--gray_dark,
-  .qu-color--gray_dark__ignore_dark_mode, .qu-color--gray_dark_dim, .q-box, .q-relative,.qu-display--block
+  .qu-color--gray_dark__ignore_dark_mode, .qu-color--gray_dark_dim, .q-box,
   .qu-color--gray_light, .StaticPage.JobsMain .content_section .section_text,
   .StaticPage.FunctionalJobsPage .content_section .section_text,
   .StaticPage.JobListingMain .content_section .section_text {
     color: #ddd !important;
-    background-color: #282828 !important;
   }
   .ComponentSurvey .question_wrapper .button_group .survey_button:focus,
   .ComponentSurvey .question_wrapper .button_group .survey_button:hover,
@@ -278,7 +277,7 @@
   .AnswerReadLaterListItem, .StatsMain .ContentListWrapper, .ContentListItem,
   .AllContentLink, .AskQuestionPromptBundle, .LoggedOutFooter,
   .AMAFeedDividerItem h3, .layout_1col_main_card, body > div {
-    background-color: transparent  !important;
+    background: transparent  !important;
   }
   .check_wrapper.complete .check, .QuestionMain .right_col_fixable,
   .RelatedQuestions, .RelatedQuestionsAdWrapper, .StoryItemToggleModal,
@@ -287,13 +286,13 @@
   }
   .EquivalentQuestionsInOtherNetworksWrapper, .u-bg--gray-ultralight,
   ul li.StaticListItem .selected[href*="answer"] {
-    background-color: #333  !important;
+    background: #333  !important;
   }
   .u-bg--gray {
-    background-color: #282828  !important;
+    background: #181818  !important;
   }
   .qu-bg--blue_light {
-    background-color: #182030  !important;
+    background-color: #182030 !important;
   }
   html:not(#noop) div.button_wrapper:not([class*="qu-hover--bg--#a82723"]):hover,
   html:not(#noop) div.button_wrapper:not([class*="qu-hover--bg--#a82723"]):active,
@@ -304,7 +303,7 @@
   .feed_card_on .RelatedQuestions h3,
   .feed_card_on .EquivalentQuestionsInOtherNetworksWrapper h3 {
     border-color: #555  !important;
-    background-color: #444  !important;
+    background: #444  !important;
   }
   .is_removable .remove_link {
     background-image: none  !important;
@@ -347,13 +346,13 @@
   .AnswerSurvey, .u-bg--white, .feed_card_on .TopicPageNavBar,
   .Modal .modal_header, .AddQuestionPrompt, .feed_item, .section_header,
   .feed_card_on .Bundle .full_bundle {
-    background-color: #222  !important;
+    background: #222  !important;
   }
   .sidenav-item.current-article {
     background-color: #333 !important;
   }
   [class*="Box-"]:not([class*="BackgroundImage_"]):not([class*="ButtonPill_"]):not([class*="display"]):not(.puppeteer_test_button_text):not([class*="Text-"]) {
-    background-color: none  !important;
+    background: none  !important;
     color: #eee !important;
   }
   .ui_popup.ui_popup--show_nub:after, .RequestActionCaret:after {
@@ -400,17 +399,17 @@
   .first_question_prompt, .QuestionSourceEdit .question_source_nux,
   .NotEnoughKnowsAboutTopicsPrompt, .TribePageNavBar, .TribePageNavBarOld,
   .credential_list_item .edit_wrapper {
-    background-color: #242424  !important;
+    background: #242424  !important;
   }
   .qu-bg--gray {
-    background-color: #383838 !important;
+    background: #383838 !important;
   }
   .JoinPage {
-    background-color: #282828 !important;
+    background: #181818 !important;
   }
   .q-platform--desktop .qu-hover--bg--gray:hover,
   button.qu-bg--blue_light.qu-hover--textDecoration--none:not(.focus) {
-    background-color: #383838  !important;
+    background: #383838  !important;
   }
   .count, .nav_item_link.hover, .nav_item_link:hover, .nav_item_link:active,
   li.selected, .follow_state_badge, .NotificationsClearLink, .LegalNavLinks,
@@ -426,12 +425,12 @@
   .AskQuestionStep .url_input_box, .TribeAddHyperLinkModal .url_input_box,
   .QuoraShareModal .url_input_box, .FollowSuggestionSection,
   .FollowSuggestionSectionWrapper, .Notif.unseen:hover {
-    background-color: #282828  !important;
+    background-color: #181818  !important;
   }
   html:not(#X) [class*="SettingsAccountMain"] [class*="linked_networks_link"] a:hover,
   .answer_count,
   span a.u-tap-highlight--white.u-hover-bg--black-transparent:hover {
-    background-color: transparent  !important;
+    background: transparent  !important;
   }
   .menu_list_item a:hover, .completed:hover, .menu_list_header:hover,
   .AnswerEditorHeader, .AddQuestionLookupBarButton,
@@ -472,10 +471,10 @@
   .ContentPageFeedStoryItem:hover .feed_item_overlay,
   .dialog:not(.dialog_nux):not(.modal_signup_dialog):after,
   a[target="_blank"].feed_item_overlay:hover {
-    background-color: rgba(0, 0, 0, .5)  !important;
+    background: rgba(0, 0, 0, .5)  !important;
   }
   /*** text color ***/
-  a span:not[style*="background-color: rgba(0, 0, 0, 0)"],
+  a span:not[style*="background: rgba(0, 0, 0, 0)"],
   .ui_content_title .ui_qtext_rendered_qtext, a:hover .TopicName,
   .is_removable .remove_link:hover, .AskQuestionButton:before, .TopicName,
   .ui_qtext_rendered_qtext span a, .see_top_questions_link,
@@ -505,35 +504,35 @@
     color: /*[[base-color]]*/ !important;
   }
   div.q-absolute:hover .qt_read_more, .q-box.qu-bg--raised:hover .qt_read_more {
-    background-color: #282828 none repeat scroll 0% 0% !important;
+    background: #181818 none repeat scroll 0% 0% !important;
     box-shadow: #333 -6px 0 8px 1px  !important;
   }
   .q-box.qu-pb--massive:hover .qt_read_more {
-    background-color: #333 none repeat scroll 0% 0% !important;
+    background: #333 none repeat scroll 0% 0% !important;
     box-shadow: #333 -20px 0 8px 0  !important;
   }
   .q-box.qu-bg--raised:hover .qt_read_more,
   .q-platform--desktop .qu-hover--bg--darken:hover .qt_read_more {
-    background-color: #282828 !important;
+    background: #181818 !important;
     box-shadow: #333 -6px 0 8px 1px  !important;
   }
   [class*="CssComponent-sc"][data-placement*="left"]::before {
     border-color: transparent transparent transparent #555 !important;
   }
   [class*="CssComponent-sc"][data-placement*="left"]::after {
-    border-color: transparent transparent transparent #282828 !important;
+    border-color: transparent transparent transparent #181818 !important;
   }
   [class*="Popper_"][data-placement*="top"]::before {
     border-color: #555 transparent transparent !important;
   }
   [class*="Popper_"][data-placement*="top"]::after {
-    border-color: #282828 transparent transparent !important;
+    border-color: #181818 transparent transparent !important;
   }
   [class*="Popper_"][data-placement*="bottom"]::before {
     border-color: transparent transparent #555 !important;
   }
   [class*="Popper_"][data-placement*="bottom"]::after {
-    border-color: transparent transparent #282828 !important;
+    border-color: transparent transparent #181818 !important;
   }
   .grid_page .layout_3col_center .ui_empty--wrapper-compact a.ui_button--non_link .ui_button_label,
   .SettingsNavList a,
@@ -589,7 +588,7 @@
   .StaticPage.FunctionalJobsPage .content_section .job_listings .job .team_link:hover,
   .StaticPage.JobsMain .content_section .job_listings .job .team_link:hover,
   .StaticPage.FunctionalJobsPage .content_section .job_listings .job .team_link:hover {
-    background-color: #282828 !important;
+    background-color: #181818 !important;
   }
   .StaticPage.JobsMain .content_section .job_listings .job .team_link .meta,
   .StaticPage.FunctionalJobsPage .content_section .job_listings .job .team_link .meta {
@@ -599,7 +598,7 @@
   .StaticPageNavigation .HorizontalTabs .linked_list_item:nth-child(2n),
   .StaticPage.FunctionalJobsPage .content_section:nth-child(2n+1),
   .StaticPage.JobListingMain .content_section:nth-child(2n+1), .AMATicker {
-    background-color: #282828 !important;
+    background-color: #181818 !important;
   }
   .qu-borderColor--raised {
     border-color: #444  !important;
@@ -659,7 +658,7 @@
   }
   /* end wth area above =) */
   .feed_item_overlay .read_more_link {
-    background-color: #191919  !important;
+    background: #191919  !important;
   }
   .ui_vertical_card_group--card {
     border-color: #555 !important;
@@ -743,7 +742,7 @@
   .suggested_edits_text:hover .inline_editor_edit,
   .qtext_editor_content:hover .inline_editor_edit,
   .inline_editor_content:hover .inline_editor_edit {
-    background-color: #222 !important;
+    background: #222 !important;
   }
   /* outline */
   .Carousel .left, .Carousel .right {
@@ -783,10 +782,10 @@
   .action_bar_button_nub:after, .hover_menu.show_nub:before,
   .menu .menu_list_item:before, .hover_menu .menu_list_item:before,
   .hover_menu.show_nub:not(.hover_menu_above) .menu_list_items > div:first-child:hover:before {
-    border-bottom-color: #282828  !important;
+    border-bottom-color: #181818  !important;
   }
   .hover_menu.show_nub.hover_menu_above .menu_list_items > .menu_list_item:last-child:hover:before {
-    border-top-color: #282828  !important;
+    border-top-color: #181818  !important;
   }
   /*** Red ***/
   a.selected span, div.tab.selected,
@@ -806,21 +805,21 @@
   }
   /*** Green ***/
   .follow_button {
-    background-color: #041  !important;
+    background: #041  !important;
     border-color: #062  !important;
     color: #0a3  !important;
   }
   .follow_button .count {
-    background-color: #041  !important;
+    background: #041  !important;
     color: #aaa  !important;
   }
   .diffinsert {
-    background-color: #020  !important;
+    background: #020  !important;
   }
   /*** Blue ***/
   .notifications_banner, .add_upvote, .User.Button, .follow_button,
   .ama_a2a_question, .Topic.Button, .Session.Button, .PileOnRequest.Button {
-    background-color: #182030  !important;
+    background: #182030  !important;
     border: 1px solid #246  !important;
   }
   .AnswerCompact .truncated_answer .not_linked:hover {
@@ -847,7 +846,7 @@
   /*** Brown ***/
   .InteractionModeBanner>div, .ErrorBanner>div, .BrowserWarning>div,
   .ReAskPrompt, .PMsg .contents {
-    background-color: #321  !important;
+    background: #321  !important;
     border-color: #542  !important;
     color: #b74  !important;
   }
@@ -866,7 +865,7 @@
   /*** Make the messages black instead of white. ***/
   .MessagesThreadItem:hover,
   .MessagesThreadItem.active {
-    background-color: rgba(0, 0, 0, .9) !important;
+    background: rgba(0, 0, 0, .9) !important;
   }
   /*** Make the answer hover colour a dark black one. ***/
   .toggle_modal_inline.inline_modal_highlight:hover {
@@ -898,11 +897,11 @@
     border-color: #555 !important;
   }
   .article-body code {
-    background-color: #111 !important;
+    background: #111 !important;
     border-color: #555 !important;
   }
   code.prettyprint, pre.prettyprint {
-    background-color: #111  !important;
+    background: #111  !important;
   }
   /* lighten code/pre syntax highligh */
   code.prettyprint .pln, pre.prettyprint .pln {
@@ -954,3 +953,39 @@
   .header_nav.business [id*="_link"].nav_item_link > span {
     color: #aaa  !important;
   }
+
+  /*            Harper is busy >:p                */
+
+  /*          Fixing the CSS for msgs, assholes didnt even complete this         */
+.ModalMessagesThreadItem, .pagedlist_item{
+  background-color: #181818 !important; 
+  border: none !important;
+  outline: none !important;
+}
+
+.ModalMessagesThreadItem:hover{
+  background-color: #272727 !important; 
+}
+
+
+.ModalThreadSingleMessage.from_other .message_text{
+  background-color: #3c3c3c !important;
+}
+
+.ModalThreadSingleMessage.from_self .message_text{
+  background-color: #359dff !important;
+}
+
+.ModalThreadSingleMessage .message_text .rendered_qtext{
+  color: #fff !important;
+}
+
+.ModalThreadSingleMessage a{
+  color: #359dff !important;
+}
+
+
+.q-text.qu-color--gray_dark.qu-fontSize--regular.qu-py--small.qu-px--medium.qu-bg--white.qu-borderRadius--large.qu-ml--small.TextInputWrapper___StyledText-abzlxg-0,
+.q-text.qu-color--gray_dark.qu-fontSize--regular.qu-py--small.qu-px--medium.qu-bg--white.qu-borderRadius--large.TextInputWrapper___StyledText-abzlxg-0{
+  background-color: #333 !important;
+}
