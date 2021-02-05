@@ -47,12 +47,12 @@
   }
   /* text selection */
   ::selection {
-    background-color: /*[[base-color]]*/  !important;
-    color: #efefef  !important;
+    background-color: #3584e4 !important;
+    color: #fff;
   }
   ::-moz-selection {
-    background-color: /*[[base-color]]*/  !important;
-    color: #efefef  !important;
+    background-color: #3584e4  !important;
+    color: #fff;
   }
   .HomeNavList .unread.has_img .EditableListItem:before,
   .EditableList .unread .EditableListItem:before,
@@ -1025,6 +1025,9 @@
   border: none;
 }
 
+img {
+    filter: brightness(.8) contrast(1.2);
+}
 
 
 
