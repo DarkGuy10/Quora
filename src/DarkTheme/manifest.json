@@ -8,8 +8,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.quora.com/*"], 
-      "js": ["DarkTheme.js"],
+      "matches": ["*://*.quora.com/*"],
       "css" : ["DarkTheme.css"]
     }
   ]

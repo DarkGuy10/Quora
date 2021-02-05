@@ -1,3 +1,4 @@
+@media (prefers-color-scheme: dark) {
 *::-webkit-scrollbar {
     width: 0.5em;
 }
@@ -1023,3 +1024,8 @@
   color: #fff !important;
   border: none;
 }
+
+
+
+
+} /*<-- this { is for the media dark thing */
