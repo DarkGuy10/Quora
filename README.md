@@ -1,7 +1,7 @@
 ![Quora Dark preview](src/icons/logo-large.png)
 
 ## Preview
-![Quora Dark preview](images/preview-dark.png)
+![Quora Dark preview](images/preview.gif)
 
 ## Description:
 An **UNOFFICIAL** electron-based desktop app made for Quora.<br>
