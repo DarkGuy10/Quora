@@ -91,7 +91,7 @@ contextMenu({
 	],
 	showSaveImage: true,
 	showSaveImageAs: true,
-//	showInspectElement: false,
+	showInspectElement: false,
 	showSearchWithGoogle: false,
 	showLookUpSelection: false
 });
