@@ -1,0 +1,110 @@
+div.settingsOverlay{
+	z-index: 100000000000;
+	background-color: rgba(0, 0, 0, 0.5) !important;
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+div.settingsBox{
+	width: 700px;
+	height: 500px;
+	position: fixed;
+	left: 50%; top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #272727;
+	border-radius: 5px;
+	padding: 20px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+button.closeSettings {
+	font-size: 25px;
+	width: 40px;
+	height: 40px;
+	border: transparent;
+	border-radius: 100%;
+	position: absolute;
+	right: 0; top: 0;
+	transform: translate(-50%, 50%);
+	color: #ddd;
+	background-color: transparent;
+}
+
+button.closeSettings:hover {
+	background-color: #3c3c3c;
+}
+
+h1.settingsBoxHeader{
+	font-family: 'DejaVu Sans';
+	font-size: 30px;
+	display: block;
+	padding-bottom: 10px;
+	border-bottom: 1px #333 solid;
+	user-select: none;
+	cursor: default;
+	color: #C0C0C0;
+}
+
+div.settingsInnerWrapper{
+	display: block;
+	padding: none;
+	width: 100%;
+}
+
+button.openSettings{
+	z-index: 1000;
+	height: 50px;
+	width: 50px;
+	color: whitesmoke;
+	background-color: #272727;
+	position: fixed;
+	bottom: 50px;
+	left: 50px;
+	display: block;
+	border: transparent;
+	border-radius: 100%;
+	font-size: 20px;
+}
+
+button.openSettings:hover{
+	color: red;
+	background-color: #000;
+	font-size: 23px;
+}
+
+p.settingsCategory{
+	font-size: 20px;
+	font-family: 'DejaVu Sans';
+	color: #ddd;
+	padding: 10px 0px;
+}
+
+div.settingsInnerWrapper form :not(p){
+	margin-left: 10px;
+	font-size: 15px;
+	font-family: 'Arial';
+	color: #ddd !important;
+}
+
+button.settingsSubmit{
+	border: 2px solid #4183c4; 
+	background-color: transparent;
+	color: #ddd;
+	padding: 14px 28px;
+	font-size: 17px !important;
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	transform: translate(-50%, 0);
+	border-radius: 5px;
+}
+
+button.settingsSubmit:hover{
+	background-color: #4183c4;
+	color: white;
+}

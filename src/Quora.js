@@ -1,34 +1,53 @@
-const { app, session, BrowserWindow, shell } = require('electron');
+const { app, session, BrowserWindow, shell, nativeTheme } = require('electron');
 const path = require('path');
+const Store = require('./AppSettings/store.js')
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
 	app.quit();
 }
 
-let mainWindow;
+var mainWindow;
 const createWindow = () => {
 	// Create the browser window.
 	mainWindow = new BrowserWindow({
     	width: 800,
-    	height: 600,
-    	icon: __dirname + 'icons/logo.ico'
+    	height: 600
 	});
-
-  	mainWindow.loadURL('http://quora.com', {userAgent: 'Chrome'})  
-  	mainWindow.maximize()
-  	mainWindow.setMenu(null)
+	mainWindow.maximize();
+  	mainWindow.loadURL('http://quora.com', {userAgent: 'Chrome'});
+  	mainWindow.setMenu(null);
   	mainWindow.webContents.on('new-window', (event, url) => {
-    	event.preventDefault()
-    	mainWindow.loadURL(url)
+    	event.preventDefault();
+    	mainWindow.loadURL(url);
 	});
 };
+
+const store = new Store({
+  // We'll call our data file 'user-preferences'
+  configName: 'user-preferences',
+  defaults: {
+    theme: 'default'
+  }
+});
 
 app.on('ready', createWindow);
 app.on('ready', async () => { // Loading extensions
 //	await session.defaultSession.loadExtension(path.join(__dirname, 'MinorAddons'))
-	await session.defaultSession.loadExtension(path.join(__dirname, 'DarkTheme'))
-})
+	await session.defaultSession.loadExtension(path.join(__dirname, 'AppSettings'));
+	var theme = store.get('theme');
+	if(((theme == 'default') && nativeTheme.shouldUseDarkColors) || theme == 'dark'){
+		await session.defaultSession.loadExtension(path.join(__dirname, 'DarkTheme'));
+	} 
+	mainWindow.webContents.executeJavaScript('localStorage.getItem("theme");')
+			.then(result => {
+				if(theme != result){
+					store.set('theme', result);
+					app.relaunch();
+					app.exit();
+				}
+			})
+});
 
 // Quit when all windows are closed, except on macOS. There, it's common
 // for applications and their menu bar to stay active until the user quits
