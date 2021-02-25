@@ -1,4 +1,4 @@
-const { app, session, BrowserWindow, shell, nativeTheme } = require('electron');
+const { app, session, BrowserWindow, shell, nativeTheme, globalShortcut } = require('electron');
 const path = require('path');
 const Store = require('./AppSettings/store.js')
 
@@ -48,6 +48,13 @@ app.on('ready', async () => { // Loading extensions
 				}
 			})
 });
+
+// Stealth mode, redirects user to set "stealthURL"
+app.whenReady().then(() => {
+  globalShortcut.register('Ctrl+D', () => {
+    mainWindow.loadURL(stealthURL);
+  })
+})
 
 // Quit when all windows are closed, except on macOS. There, it's common
 // for applications and their menu bar to stay active until the user quits
