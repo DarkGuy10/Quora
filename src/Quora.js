@@ -1,4 +1,5 @@
-const { app, session, BrowserWindow, shell, nativeTheme, globalShortcut } = require('electron');
+const { app, session,/* autoUpdater, dialog, */ BrowserWindow, shell, nativeTheme, globalShortcut } = require('electron');
+// require('update-electron-app')();
 const path = require('path');
 const Store = require('./AppSettings/store.js')
 
